@@ -1,0 +1,15 @@
+{
+  "name": "plantashop",
+  "version": "0.0.0",
+  "description": "Plantashop",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8"
+  }
+}
