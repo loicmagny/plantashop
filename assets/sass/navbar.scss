@@ -1,0 +1,55 @@
+.navbar_smartphone{
+    &_top{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &_left{
+            width: 90px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            &>i{
+                align-self: center;
+                color: $lightgreen;
+            }
+        }
+
+        &_logo{
+            align-self: center;
+            width: 50%;
+            height: auto;
+
+            &>img{
+                width: 100%;
+            }
+        }
+    }
+    &_bot{
+        background-color: $darkgreen;
+        position: absolute;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        bottom: 30px;
+        width: 80%;
+        height: 60px;
+        border-radius: 40px;
+
+        &_list{
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+            width: 80%;
+            margin: auto;
+            color: $lightgrey;
+        }
+    }
+}
