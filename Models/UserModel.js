@@ -1,5 +1,5 @@
 class User {
-    constructor(id, username, password, email, firstname, lastname, adress, phone) {
+    constructor(id = 0, username = '', password = '', email = '', firstname = '', lastname = '', adress = '', phone = '') {
         this.id = id
         this.username = username
         this.pasword = password
@@ -65,4 +65,6 @@ class User {
     set phone() {
         return this.phone = value
     }
+
+
 }

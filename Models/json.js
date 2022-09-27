@@ -5,7 +5,8 @@ const port = 8000;
 
 
 const requestListener = function (req, res) {
-    
+    let product = new Products()
+    res.json(product);
 };
 
 
