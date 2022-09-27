@@ -32,6 +32,9 @@
     <Content Include=".gitignore">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Controllers\.gitignore">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Controllers\UserController.js">
       <SubType>Code</SubType>
     </Content>

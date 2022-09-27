@@ -1,26 +1,11 @@
-
+'use strict';
 const express = require("express");
 const app = express();
-const fs = require('fs').promises;
+const fs = require('fs');
 const { resolve } = require('path');
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 app.set('views', './views')
 app.set('view engine', 'ejs')
-
-function readTextFile(file, callback) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function () {
-        if (rawFile.readyState === 4 && rawFile.status == "200") {
-            callback(rawFile.responseText);
-        }
-    }
-    rawFile.send(null);
-}
-
-//usage:
 
 
 app.get("/", function (req, res) {
@@ -28,10 +13,9 @@ app.get("/", function (req, res) {
 });
 
 app.get("/products", (req, res) => {
-
-    readTextFile("Datas/products.json", function (text) {
-        res.json(JSON.parse(text));
-    });
+    let rawdata = fs.readFileSync('Datas/products.json');
+    let products = JSON.parse(rawdata);
+    res.json(products)
 })
 
 
