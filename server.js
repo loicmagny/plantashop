@@ -6,6 +6,7 @@ const { resolve } = require('path');
 
 app.set('views', './views')
 app.set('view engine', 'ejs')
+app.use(express.static(__dirname + '/public'));
 
 app.get("/", function (req, res) {
     res.render('home')
