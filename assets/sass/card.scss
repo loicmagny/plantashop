@@ -1,0 +1,38 @@
+.card{
+    z-index: 10;
+    margin-top: 32px;
+    position: relative;
+    width: 45%;
+    background-color: $lightgrey;
+    box-shadow: $box-shadow;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    &_img{
+        width: 100%;
+    }
+    &_content{
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 8px;
+        padding-right: 8px;
+        &_title{
+            font-size: 12px;
+        }
+
+        &_price{
+            font-size: 10px;
+            color: $yellow;
+        }
+    }
+    &_icon{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+}
