@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,26 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Plantashop - Nursery</title>
     <style>
-        body {
+        .map {
             display: flex;
-            justify-content: center;
             align-items: center;
-            min-height: 100vh;
-        }
-
+            justify-content: center;
+          }
+      
         #map {
             border: 2px solid #333;
             width: 80vw;
             height: 80vh;
+      
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h1>Cherchez votre nursery</h1>
-    </div>
+ <div>
+    <h1>Cherchez votre nursery</h1>
+ </div>
+ <div class="map">
     <div id="map"></div>
+ </div>
+    
     <script>
         let map;
         document.addEventListener("DOMContentLoaded", () => {
