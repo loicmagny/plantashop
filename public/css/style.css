@@ -522,6 +522,7 @@ input {
 .login_button {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 .login_link {
