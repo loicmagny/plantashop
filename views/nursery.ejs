@@ -3,15 +3,18 @@
 <h1 class="title">Cherchez votre nursery</h1>
  <div class="map_searchbar">
         <input type="text" placeholder="Search">
+        
+            <button class="btn btn-primary">Open in maps</button>
+            <button class="btn btn-primary">Appeler</button>
+        
     </div>
 <div class="map">
    
-    <div id="map"></div>
-    <div class="btn_map">
-        <button class="btn btn-primary">Open in maps</button>
-        <button class="btn btn-primary">Appeler</button>
-    </div>
+    <div id="map" style="width:90%; margin: auto;"></div>
+
 </div>
+
+<%- include('./Components/footer') %>
 <script>
     let map;
     document.addEventListener("DOMContentLoaded", () => {

@@ -1,0 +1,68 @@
+<%- include('./Components/header') %>
+
+<div class="product">
+    <img class="product_img" src="/img/vraiplante.png" alt="">
+    <div class="product_infos">
+        <div class="product_infos_title">
+            <h1>title</h1>
+            <p>34.99€</p>
+        </div>
+        <p class="product_infos_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eos velit esse? Est placeat amet minima ex modi, ab fugiat animi, obcaecati praesentium delectus molestias eos a, laboriosam quibusdam! Voluptas.</p>
+        <div class="product_infos_icons">
+            <div>
+                <i class="fa-solid fa-droplet fa-2xl"></i>
+                <p>dd</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-sun fa-2xl"></i>
+                <p>dd</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-temperature-three-quarters fa-2xl"></i>
+                <p>dd</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud fa-2xl"></i>
+                <p>dd</p>
+            </div>
+        </div>
+        <div class="product_infos_stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="product_infos_bottom">
+            <div class="product_infos_bottom_add">
+                <p>+</p>
+                <p>1</p>
+                <p>-</p>
+            </div>
+            <button class="btn btn-primary">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+<h2 class="product_undertitle">
+    Pourrait vous interesser
+</h2>
+
+<div class="home_theones_content product_interest">
+    <% for (let i=0; i < 4; i++) { %>
+        <a class="card" href="#ddkd" id="card_<%=i%>">
+            <img class="card_img" src="/img/vraiplante.png" alt="">
+            <div class="card_content">
+                <p class="card_content_title">
+                    <%= products[i].name %>
+                </p>
+                <p class="card_content_price">
+                    <%= products[i].price %>
+                </p>
+            </div>
+            <i class="card_icon fa-regular fa-heart fa-xl"></i>
+        </a>
+        <% } %>
+</div>
+
+<%- include('./Components/footer') %>

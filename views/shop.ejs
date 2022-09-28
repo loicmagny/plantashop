@@ -17,13 +17,13 @@
     <div class="shop_content">
         <% for (let i=0; i < products.length; i++) { %>
             <a class="card" href="#ddkd" id="card_<%=i%>">
-                <img class="card_img" src="/img/vraiplante.png" alt="">
+                <img class="card_img" src="/img/<%=products[i].img%>.png" alt="">
                 <div class="card_content">
                     <p class="card_content_title">
                         <%= products[i].name %>
                     </p>
                     <p class="card_content_price">
-                        <%= products[i].price %>
+                        <%= products[i].price %>€
                     </p>
                 </div>
                 <i class="card_icon fa-regular fa-heart fa-xl"></i>

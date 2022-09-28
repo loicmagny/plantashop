@@ -37,6 +37,19 @@ app.get("/login", function (req, res) {
     res.render('login')
 });
 
+app.get("/profil", function (req, res) {
+    res.render('profil')
+});
+
+app.get("/product/:id", function (req, res) {
+    fs.readFile('Datas/products.json', (err, data) => {
+		if (err) throw err;
+		res.render('product', {
+			products: JSON.parse(data)
+		});
+	});
+});
+
 app.listen('8000', 'localhost', () => {
 	console.log('server start');
 });

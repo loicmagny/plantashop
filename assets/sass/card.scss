@@ -14,7 +14,10 @@
     text-decoration: none;
     
     &_img{
-        width: 100%;
+        max-height: 250px;
+        width: fit-content;
+        align-self: center;
+        
     }
     &_content{
         font-weight: bold;
