@@ -1,0 +1,34 @@
+<%- include('./Components/header') %>
+
+<h1 class="title">Cherchez votre nursery</h1>
+ <div class="map_searchbar">
+        <input type="text" placeholder="Search">
+    </div>
+<div class="map">
+   
+    <div id="map"></div>
+    <div class="btn_map">
+        <button class="btn btn-primary">Open in maps</button>
+        <button class="btn btn-primary">Appeler</button>
+    </div>
+</div>
+<script>
+    let map;
+    document.addEventListener("DOMContentLoaded", () => {
+        let s = document.createElement("script");
+        document.head.appendChild(s);
+        s.addEventListener("load", () => {
+            //script has loaded
+            console.log("script has loaded");
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: {
+                    lat: 49.8941708,
+                    lng: 2.2956951
+                },
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+        });
+        s.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyA4YhW76WXY-tIrzjf9eIvzSyqDecjNtOo`;
+    });
+</script>

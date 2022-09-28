@@ -1,6 +1,5 @@
 <%- include('./Components/header') %>
 
-    <h1>Discover</h1>
 
     <div class="home_homeimage">
         <img src="/img/homeimage.png" alt="">
@@ -10,6 +9,8 @@
             <a href="##" class="btn btn-primary">Discover our products</a>
         </div>
     </div>
+
+    <h1>Discover</h1>
 
     <div class="home_searchbar">
         <input type="text" placeholder="Search">
@@ -40,11 +41,10 @@
             <a href="" class="btn btn-secondary">Voir plus</a>
         </div>
         <div class="home_theones_content">
-            <% for (let i=0; i < products.length; i++) { %>
-                <div class="card">
+            <% for (let i=0; i < 4; i++) { %>
+                <a class="card" href="#ddkd" id="card_<%=i%>" onclick="CatchValues(<%= i %>, <%= products[i].price %>)">
                     <img class="card_img" src="/img/vraiplante.png" alt="">
                     <div class="card_content">
-                        <button id="add_cart">Ajouter</button>
                         <p class="card_content_title">
                             <%= products[i].name %>
                         </p>
@@ -52,10 +52,27 @@
                             <%= products[i].price %>
                         </p>
                     </div>
-                    <i class="card_icon fa-regular fa-heart"></i>
-                </div>
+                    <i class="card_icon fa-regular fa-heart fa-xl"></i>
+                </a>
                 <% } %>
         </div>
+    </div>
+
+    <div class="contact">
+        <div>
+            <h2>Contactez nous !</h2>
+            <p>Achetez, loger et soignez vos plantes en toute securité</p>
+            <div>
+                <p><i class="fa-solid fa-phone"></i> +336 054 489</p>
+                <p><i class="fa-solid fa-envelope"></i> Contactez nous</p>
+            </div>
+            <p>Souscrivez a la New's later</p>
+            <div>
+                <input type="text" placeholder="Votre email">
+                <a href="#" class="btn btn-primary contact_btn">Souscrire</a>
+            </div>
+        </div>
+        <img src="/img/pins.jpg" alt="">
     </div>
 
 

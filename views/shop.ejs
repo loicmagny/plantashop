@@ -1,0 +1,35 @@
+<%- include('./Components/header') %>
+
+<div class="shop">
+    <div class="shop_filter">
+        <h2>Filtres</h2>
+        <div class="shop_filter_prix">
+            <p>Prix</p>
+            <input type="range">
+        </div>
+        <p>Taille</p>
+        <div class="shop_filter_eau">
+            <p>Besoin en eau</p>
+            <input type="range" >
+        </div>
+        <p>Couleurs</p>
+    </div>
+    <div class="shop_content">
+        <% for (let i=0; i < products.length; i++) { %>
+            <a class="card" href="#ddkd" id="card_<%=i%>">
+                <img class="card_img" src="/img/vraiplante.png" alt="">
+                <div class="card_content">
+                    <p class="card_content_title">
+                        <%= products[i].name %>
+                    </p>
+                    <p class="card_content_price">
+                        <%= products[i].price %>
+                    </p>
+                </div>
+                <i class="card_icon fa-regular fa-heart fa-xl"></i>
+            </a>
+            <% } %>
+    </div>
+</div>
+
+<%- include('./Components/footer') %>

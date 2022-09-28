@@ -1,7 +1,49 @@
-@media screen and (min-width: 500px)
-{
-    .navbar_smartphone{
-        display: none;
+.navbar_desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+
+    &_right {
+        width: 50%;
+
+        &>ul{
+            list-style-type: none;
+            display: flex !important;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;  
+
+            &>li>a{
+                position: relative;
+                &>p{
+                    border-radius: 64px;
+                    background-color: $yellow;
+                    top: 16px;
+                    right: -8px;
+                    position: absolute;
+                    margin: 0;
+                    font-size: 12px;
+                    font-weight: bold;
+                    padding: 4px;
+                    height: 14px;
+                    width: 14px;
+                    color: $lightgrey;
+                    text-align: center;
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    &_left{
+        width: 20%;
+        
+        &>img{
+            width: 100%;
+        }
     }
 }
 
@@ -15,9 +57,9 @@
 
         &_left{
             width: 90px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             &>i{
                 align-self: center;
                 color: $lightgreen;
@@ -40,8 +82,8 @@
         position: fixed;
         width: 80vw;
         height: 60px;
-        top: 90vh;
-        left: 10vw;
+        top: 0;
+        margin-top: 90vh;
         border-radius: 40px;
 
         &_list{
@@ -58,3 +100,19 @@
         }
     }
 }
+
+@media screen and (min-width: 500px)
+{
+    .navbar_smartphone{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px)
+{
+    .navbar_desktop{
+        display: none;
+    }
+}
+
