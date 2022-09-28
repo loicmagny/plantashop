@@ -1,12 +1,3 @@
-@media screen and (min-width: 500px)
-{
-    .home{
-        &_homeimage{
-            display: block;
-        }
-    }
-}
-
 .home{
 
     &_homeimage{
@@ -61,6 +52,7 @@
     }
 
     &_theones{
+        margin-top: 5%;
         &_title{
             display: flex;
             flex-direction: row;
@@ -74,6 +66,113 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
+        }
+    }
+}
+
+.contact{
+    margin-left:-150px ;
+    margin-right:-150px ;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $lightgreen;
+    
+    &>img{
+        width: 50%;
+    }
+    &>div{
+        width: 50%;
+        margin: auto;
+        margin-left: 150px;
+        padding: 62px;
+        padding-left: 0;
+        &>p{
+            color: $lightgrey;
+        }
+        &>h2{
+            color: $lightgrey;
+        }
+
+        &>div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &>p{
+                padding: 12px;
+                border-radius: 60px;
+                background-color: $lightgrey;
+                color: $darkgreen;
+            }
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 500px)
+{
+    .home{
+        &_homeimage{
+            display: flex ;
+            position: relative;
+            width: 98vw;
+            margin-left:-150px ;
+            margin-right:-150px ;
+            margin-bottom: 60px;
+            &>img{
+                width: 100%;
+            }
+
+            &_text{
+                position: absolute;
+                text-align: right;
+                width: 50%;
+                right: 15%;
+                
+                top: 32px;
+                &>p{
+                    color: $lightgrey;
+                    font-size: 20px;
+                }
+                &>h2{
+                    color: $lightgrey;
+                    font-size: 100px;
+                }
+            }
+        }
+        
+        &_slider{
+            display: none;
+        }
+
+        &_searchbar{
+            display: none;
+        }
+
+        &_boxesinfos{
+            margin-top: 60px;
+            justify-content: space-between;
+            &>div{
+                flex-direction: row ; 
+                align-items: center;
+                width: 20%;
+                justify-content: space-between;
+                padding: 16px;
+                padding-right: 40px ;
+    
+                &>img{
+                    margin: auto;
+                    width: 50px;
+                }
+    
+                &>p {
+                    margin: 12px;
+                    margin-bottom: 0;
+                    margin-top: 0 ;
+                }
+            }
         }
     }
 }

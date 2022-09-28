@@ -1,0 +1,23 @@
+.shop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &_filter{
+        width: 25%;
+        background-color: $lightgrey;
+        position: sticky;
+        margin-top: 30px;
+
+        &_prix{
+
+        }
+    }
+
+    &_content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 70%;
+    }
+}

@@ -1,6 +1,5 @@
 <%- include('./Components/header') %>
 
-<h1>Discover</h1>
 
 <div class="home_homeimage">
     <img src="/img/homeimage.png" alt="">
@@ -10,6 +9,8 @@
         <a href="##" class="btn btn-primary">Discover our products</a>
     </div>
 </div>
+
+<h1>Discover</h1>
 
 <div class="home_searchbar">
     <input type="text" placeholder="Search">
@@ -40,97 +41,39 @@
         <a href="" class="btn btn-secondary">Voir plus</a>
     </div>
     <div class="home_theones_content">
-        <div class="card">
-            <img class="card_img" src="/img/vraiplante.png" alt="">
-            <div class="card_content">
-                <p class="card_content_title">Lorem Ipsum</p>
-                <p class="card_content_price">36.58€</p>
-            </div>
-            <i class="card_icon fa-regular fa-heart"></i>
-        </div>
-        <div class="card">
-            <img class="card_img" src="/img/vraiplante.png" alt="">
-            <div class="card_content">
-                <p class="card_content_title">Lorem Ipsum</p>
-                <p class="card_content_price">36.58€</p>
-            </div>
-            <i class="card_icon fa-regular fa-heart"></i>
-        </div>
-        <div class="card">
-            <img class="card_img" src="/img/vraiplante.png" alt="">
-            <div class="card_content">
-                <p class="card_content_title">Lorem Ipsum</p>
-                <p class="card_content_price">36.58€</p>
-            </div>
-            <i class="card_icon fa-regular fa-heart"></i>
-        </div>
-        <div class="card">
-            <img class="card_img" src="/img/vraiplante.png" alt="">
-            <div class="card_content">
-                <p class="card_content_title">Lorem Ipsum</p>
-                <p class="card_content_price">36.58€</p>
-            </div>
-            <i class="card_icon fa-regular fa-heart"></i>
-        </div>
+        <% for (let i=0; i < 4; i++) { %>
+            <a class="card" href="#ddkd" id="card_<%=i%>">
+                <img class="card_img" src="/img/vraiplante.png" alt="">
+                <div class="card_content">
+                    <p class="card_content_title">
+                        <%= products[i].name %>
+                    </p>
+                    <p class="card_content_price">
+                        <%= products[i].price %>
+                    </p>
+                </div>
+                <i class="card_icon fa-regular fa-heart fa-xl"></i>
+            </a>
+            <% } %>
     </div>
 </div>
 
-
-    <div class="home_homeimage">
-        <img src="/img/homeimage.png" alt="">
-        <div class="home_homeimage_text">
-            <h2>Lorem ispum</h2>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
-            <a href="##" class="btn btn-primary">Discover our products</a>
-        </div>
-    </div>
-
-    <div class="home_searchbar">
-        <input type="text" placeholder="Search">
-    </div>
-
-    <div class="home_boxesinfos">
+<div class="contact">
+    <div>
+        <h2>Contactez nous !</h2>
+        <p>Achetez, loger et soignez vos plantes en toute securité</p>
         <div>
-            <img src="/img/plante.png" alt="">
-            <p>Lorem</p>
+            <p><i class="fa-solid fa-phone"></i> +336 054 489</p>
+            <p><i class="fa-solid fa-envelope"></i> Contactez nous</p>
         </div>
+        <p>Souscrivez a la New's later</p>
         <div>
-            <img src="/img/camion.png" alt="">
-            <p>Lorem</p>
-        </div>
-        <div>
-            <img src="/img/gouttes.png" alt="">
-            <p>Lorem</p>
+            <input type="text" placeholder="Votre email">
+            <a href="#" class="btn btn-primary">Souscrire</a>
         </div>
     </div>
-
-    <div class="home_slider">
-        <img src="/img/secondimage.png" alt="">
-    </div>
-
-    <div class="home_theones">
-        <div class="home_theones_title">
-            <h2>A la une</h2>
-            <a href="" class="btn btn-secondary">Voir plus</a>
-        </div>
-        <div class="home_theones_content">
-            <% for (let i=0; i < products.length; i++) { %>
-                <div class="card">
-                    <img class="card_img" src="/img/vraiplante.png" alt="">
-                    <div class="card_content">
-                        <button id="add_cart">Ajouter</button>
-                        <p class="card_content_title">
-                            <%= products[i].name %>
-                        </p>
-                        <p class="card_content_price">
-                            <%= products[i].price %>
-                        </p>
-                    </div>
-                    <i class="card_icon fa-regular fa-heart"></i>
-                </div>
-                <% } %>
-        </div>
-    </div>
+    <img src="/img/pins.jpg" alt="">
+</div>
 
 
     <%- include('./Components/footer') %>
