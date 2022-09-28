@@ -12,6 +12,8 @@
         <button class="btn btn-primary">Appeler</button>
     </div>
 </div>
+
+<%- include('./Components/footer') %>
 <script>
     let map;
     document.addEventListener("DOMContentLoaded", () => {
@@ -28,7 +30,10 @@
                 zoom: 16,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             });
+
+            
         });
+        
         s.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyA4YhW76WXY-tIrzjf9eIvzSyqDecjNtOo`;
     });
 </script>
