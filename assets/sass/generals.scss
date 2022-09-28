@@ -20,6 +20,7 @@ body {
     &-primary{
         background-color: $yellow;
         color: $lightgrey;
+        border: none;
     }
     &-secondary{
         border: solid 3px $yellow;
