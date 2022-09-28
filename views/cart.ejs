@@ -1,42 +1,30 @@
 <%- include('./Components/header') %>
 
-<div class="cart">
-    <div class="cart_content">
-        <h1>Votre panier</h1>
-        <div class="cart_content_items"  id="cart">
-            <div class="cart_content_items_item">
-                <img src="/img/vraiplante.png" alt="">
-                <p>Prix</p>
-                <div>
-                    <i>+</i>
-                    <p>1</p>
-                    <i>-</i>
-                </div>
-                <p>Prix total</p>
-                <p><i class="fa-solid fa-trash" style="color: red;"></i></p>
-            </div>
-        </div>
-    </div>
-    <div class="cart_proceed">
-        <h1>Résumé</h1>
-        <div>
-            <div>
-                <p>Sous total</p>
-                <p>ddd</p>
-            </div>
-            <div>
-                <!-- Ici tu mets juste genre prix*20/100 -->
-                <p>TVA 20%</p>
-                <p>ddd</p>
-            </div>
-            <div>
-                <!-- Le total tva + sous total -->
-                <p>Total</p>
-                <p>ddd</p>
-            </div>
-            <button class="btn btn-primary">Passer la commande</button>
-        </div>
-    </div>
-</div>
+    <div class="cart" onload="displayCart()">
+        <div class="cart_content" id="cart">
+            <h1>Votre panier</h1>
 
-<%- include('./Components/footer') %>
+        </div>
+        <div class="cart_proceed">
+            <h1>Résumé</h1>
+            <div>
+                <div>
+                    <p>Sous total</p>
+                    <p>ddd</p>
+                </div>
+                <div>
+                    <!-- Ici tu mets juste genre prix*20/100 -->
+                    <p>TVA 20%</p>
+                    <p>ddd</p>
+                </div>
+                <div>
+                    <!-- Le total tva + sous total -->
+                    <p>Total</p>
+                    <p>ddd</p>
+                </div>
+                <button class="btn btn-primary">Passer la commande</button>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./Components/footer') %>

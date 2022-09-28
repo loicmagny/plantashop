@@ -26,7 +26,7 @@ app.get("/cart", function (req, res) {
 });
 
 app.get("/shop", function (req, res) {
-    fs.readFile('Datas/products.json', (err, data) => {
+    fs.readFile('./Datas/products.json', (err, data) => {
 		if (err) throw err;
 		res.render('shop', {
 			products: JSON.parse(data)
