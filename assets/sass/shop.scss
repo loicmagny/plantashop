@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     &_filter{
+        padding: 16px;
         width: 25%;
         background-color: $lightgrey;
         position: sticky;

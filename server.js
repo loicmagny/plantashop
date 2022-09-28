@@ -32,6 +32,7 @@ app.get("/shop", function (req, res) {
 			products: JSON.parse(data)
 		});
 	});
+});
 app.get("/login", function (req, res) {
     res.render('login')
 });

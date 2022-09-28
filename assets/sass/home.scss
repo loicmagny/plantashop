@@ -81,6 +81,7 @@
     
     &>img{
         width: 50%;
+        display: none;
     }
     &>div{
         width: 50%;
@@ -106,6 +107,7 @@
                 color: $darkgreen;
             }
         }
+        
         
     }
 
@@ -173,6 +175,19 @@
                     margin-top: 0 ;
                 }
             }
+        }
+    }
+
+    .contact{
+        margin: 0 !important;
+        margin-top: 10% !important;
+        width: 100%;
+        
+        &>img{
+            display: block;
+        }
+        &>div{
+            width: 100%;
         }
     }
 }
