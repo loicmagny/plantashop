@@ -11,6 +11,9 @@ app.use(express.static(__dirname + '/public'));
 app.get("/", function (req, res) {
     res.render('home')
 });
+app.get("/nursery", function (req, res) {
+    res.render('nursery')
+});
 
 app.get("/products", (req, res) => {
     fs.readFile('Datas/products.json', (err, data) => {
