@@ -30,10 +30,33 @@ h1{
     font-size: 20px;
 }
 h2{
-    font-size: 20px;
+    font-size: 18px;
+}
+p{
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
 }
 
 input[type="text"]::placeholder {  
 
     padding-left: 12px; 
 } 
+
+@media screen and (min-width: 500px)
+{
+    body{
+        margin-left:150px ;
+        margin-right:150px ;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
