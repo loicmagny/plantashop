@@ -19,6 +19,9 @@ app.get('/', function(req, res) {
 app.get("/nursery", function (req, res) {
     res.render('nursery')
 });
+app.get("/login", function (req, res) {
+    res.render('login')
+});
 
 app.listen('8000', 'localhost', () => {
 	console.log('server start');
