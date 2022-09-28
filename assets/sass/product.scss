@@ -6,9 +6,11 @@
     &_img{
         width: 40%;
         height: auto;
+        max-height: 600px;
         background-color: $lightgreen;
     }
     &_infos{
+        width: 60%;
         padding: 24px;
         display: flex;
         flex-direction: column;
@@ -77,5 +79,12 @@
 
     &_interest{
         margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .product{
+        flex-direction: column;
     }
 }

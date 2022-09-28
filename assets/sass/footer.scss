@@ -2,6 +2,9 @@ footer{
     background-color: $darkgreen;
     margin-left:-150px ;
     margin-right:-150px ;
+    margin-top: 60px;
+    position: static;
+    bottom: 0;
 }
 
 
@@ -10,6 +13,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
     }
     
     .div1 { 
@@ -19,6 +23,10 @@ footer{
         flex-direction: column;
         align-items: center;
         width: 33%;
+        &>p{
+            color: $yellow;
+            font-size:medium;
+        }
 }
     .div2 { 
         color: $yellow;
@@ -27,7 +35,10 @@ footer{
         flex-direction: column;
         align-items: center;
         width: 33%;
-        
+        &>p{
+            color: $yellow;
+            font-size:medium;
+        }
     }
     .div3 { 
         color: $yellow;
@@ -36,8 +47,9 @@ footer{
         flex-direction: column;
         align-items: center;
         width: 33%;
+        &>p{
+            color: $yellow;
+            font-size:medium;
+        }
     }
-    p{
-        color: $yellow;
-        font-size:medium;
-    }
+    

@@ -44,8 +44,10 @@ app.get("/profil", function (req, res) {
 app.get("/product/:id", function (req, res) {
     fs.readFile('Datas/products.json', (err, data) => {
 		if (err) throw err;
+		const id = Number(req.params.id)
 		res.render('product', {
-			products: JSON.parse(data)
+			products: JSON.parse(data),
+			id: id
 		});
 	});
 });
