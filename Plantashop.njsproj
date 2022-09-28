@@ -50,14 +50,8 @@
     <Content Include="Models\json.js">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Models\ProductsModel.js">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="Models\server.js" />
     <Content Include="Models\User.model.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="Models\UserModel.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="package.json" />

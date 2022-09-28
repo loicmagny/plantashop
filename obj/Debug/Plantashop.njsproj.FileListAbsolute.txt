@@ -1,3 +1,6 @@
 C:\Users\Utilisateur\source\repos\Plantashop\Plantashop\obj\Debug\Plantashop.njsproj.AssemblyReference.cache
 C:\Users\Utilisateur\source\repos\Plantashop\Plantashop\obj\Debug\Plantashop.njsproj.CoreCompileInputs.cache
 C:\Users\Utilisateur\source\repos\Plantashop\Plantashop\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\Utilisateur\Desktop\Nouveau dossier\plantashop\obj\Debug\Plantashop.njsproj.AssemblyReference.cache
+C:\Users\Utilisateur\Desktop\Nouveau dossier\plantashop\obj\Debug\Plantashop.njsproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\Desktop\Nouveau dossier\plantashop\bin\Microsoft.NodejsTools.WebRole.dll

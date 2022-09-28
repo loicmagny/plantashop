@@ -1,5 +1,62 @@
 <%- include('./Components/header') %>
 
-<h1>BGGGGdsdsdG</h1>
+    <h1>Discover</h1>
 
-<%- include('./Components/footer') %>
+    <div class="home_homeimage">
+        <img src="/img/homeimage.png" alt="">
+        <div class="home_homeimage_text">
+            <h2>Lorem ispum</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+            <a href="##" class="btn btn-primary">Discover our products</a>
+        </div>
+    </div>
+
+    <div class="home_searchbar">
+        <input type="text" placeholder="Search">
+    </div>
+
+    <div class="home_boxesinfos">
+        <div>
+            <img src="/img/plante.png" alt="">
+            <p>Lorem</p>
+        </div>
+        <div>
+            <img src="/img/camion.png" alt="">
+            <p>Lorem</p>
+        </div>
+        <div>
+            <img src="/img/gouttes.png" alt="">
+            <p>Lorem</p>
+        </div>
+    </div>
+
+    <div class="home_slider">
+        <img src="/img/secondimage.png" alt="">
+    </div>
+
+    <div class="home_theones">
+        <div class="home_theones_title">
+            <h2>A la une</h2>
+            <a href="" class="btn btn-secondary">Voir plus</a>
+        </div>
+        <div class="home_theones_content">
+            <% for (let i=0; i < products.length; i++) { %>
+                <div class="card">
+                    <img class="card_img" src="/img/vraiplante.png" alt="">
+                    <div class="card_content">
+                        <button id="add_cart">Ajouter</button>
+                        <p class="card_content_title">
+                            <%= products[i].name %>
+                        </p>
+                        <p class="card_content_price">
+                            <%= products[i].price %>
+                        </p>
+                    </div>
+                    <i class="card_icon fa-regular fa-heart"></i>
+                </div>
+                <% } %>
+        </div>
+    </div>
+
+
+    <%- include('./Components/footer') %>

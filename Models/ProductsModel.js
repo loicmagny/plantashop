@@ -78,7 +78,6 @@ class Products {
         const fs = require('fs');
         fs.readFile('Datas/products.json', (err, data) => {
             if (err) throw err;
-            console.log(JSON.parse(data))
             return JSON.parse(data)
         });
     }

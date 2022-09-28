@@ -16,7 +16,7 @@ app.get("/", function (req, res) {
 
 app.get("/products", (req, res) => {
     let prod = new Products();
-    res.json(prod.getAllProducts())
+    DisplayJSONDatas(prod.getAllProducts())
     console.log(prod.getAllProducts)
 })
 

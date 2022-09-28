@@ -1,3 +1,15 @@
-body{
-    background-color: red;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+$darkgreen: #0C3B2E;
+$lightgreen: #6D9773;
+$yellow: #FFBA00;
+$lightgrey: #F6F6F6;
+$text_second: #666666;
+$text: #080808;
+$box-shadow: 0px 2px 5px 2px rgba(36, 36, 36, 0.10);
+
+@import 'generals';
+@import 'navbar';
+@import 'home';
+@import 'card';
+
