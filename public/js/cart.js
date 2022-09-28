@@ -28,7 +28,7 @@ function displayCart() {
 						card.setAttribute('id', 'card_' + datas[j].id);
 						let img = document.createElement('img');
 						img.setAttribute('class', 'card_img');
-						img.setAttribute('src', datas[j].img);
+						img.setAttribute('src', "/img/"+datas[j].img+".png");
 						let p = document.createElement('p');
 						p.innerText = 'Prix: ' + datas[j].price;
 						p.setAttribute('onclick', 'CalcPrice(' + datas[j].id + ',)');
