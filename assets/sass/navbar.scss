@@ -1,0 +1,60 @@
+@media screen and (min-width: 500px)
+{
+    .navbar_smartphone{
+        display: none;
+    }
+}
+
+.navbar_smartphone{
+    &_top{
+        z-index: 100;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &_left{
+            width: 90px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            &>i{
+                align-self: center;
+                color: $lightgreen;
+            }
+        }
+
+        &_logo{
+            align-self: center;
+            width: 50%;
+            height: auto;
+
+            &>img{
+                width: 100%;
+            }
+        }
+    }
+    &_bot{
+        z-index: 100;
+        background-color: $darkgreen;
+        position: fixed;
+        width: 80vw;
+        height: 60px;
+        top: 90vh;
+        left: 10vw;
+        border-radius: 40px;
+
+        &_list{
+            height: 100%;
+            align-items: center;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+            width: 80%;
+            margin: auto;
+            color: $lightgrey;
+        }
+    }
+}
